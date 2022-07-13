@@ -1,0 +1,10 @@
+{
+  "products": [
+    {
+      "image": "https://github.com/p4kz.png",
+      "name": "Eric Machado Mendonça",
+      "price": "R$ 60",
+      "id": 1
+    }
+  ]
+}

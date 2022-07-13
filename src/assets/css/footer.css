@@ -1,0 +1,126 @@
+.footer-section {
+  background: var(--bg-secundary);
+  display: flex;
+  align-items: center;
+  min-height: 368px;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-info__box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.footer-info__list {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-info__link {
+  margin-bottom: 24px;
+}
+
+.footer-info__link a {
+  color: var(--font-gray);
+  font-size: 1.6rem;
+}
+
+.footer-info__link:nth-child(6) {
+  margin-bottom: 0;
+}
+
+.footer-info__form {
+  width: 100%;
+  max-width: 560px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.footer-info__form--title {
+  color: var(--font-gray);
+}
+
+.footer-info__form--accessibility {
+  background: var(--bg-white);
+  padding: 7px 12px;
+  box-shadow: 3px 3px 5px -4px rgba(0,0,0,0.75);
+}
+
+.footer-info__form--label {
+  font-size: 1.2rem;
+  color: var(--font-lightgray);
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-info__form--input, .footer-info__form--textarea {
+  width: 90%;
+  max-width: 560px;
+  font-size: 1.6rem;
+  border: 0;
+  color: var(--font-gray);
+}
+
+.footer-info__form--label-textarea {
+  color: transparent;
+}
+
+.footer-info__form--textarea {
+  height: 52px;
+}
+
+.footer-info__form--button {
+  max-width: 165px;
+  border: 0;
+}
+
+.footer-copy {
+  background: var(--bg-white);
+  text-align: center;
+  padding: 32px 0;
+  color: var(--font-gray);
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.footer-copy__text--autor {
+  color: var(--font-gray);
+}
+
+@media screen and (max-width: 768px) {
+  .footer-info__box {
+    flex-direction: column;
+  }
+
+  .footer-info__list {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .footer-info {
+    flex-direction: column;
+  }
+
+  .footer-info__box {
+    width: 100%;
+    align-items: center;
+  }
+
+  .footer-info__list {
+    text-align: center;
+  }
+
+  .footer-info__form {
+    margin-top: 2rem;
+  }
+}
