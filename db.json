@@ -1,15 +1,39 @@
 {
   "products": [
     {
-      "image": "https://imgur.com/OaUqxrl.png",
-      "name": "Eric Machado Mendonça",
-      "price": "R$ 60",
+      "image": "https://images2.imgbox.com/b0/4b/6Irc1xz0_o.jpg",
+      "name": "Zelda",
+      "price": "R$ 10",
       "id": 1
     },
     {
-      "image": "https://github.com/p4kz.png",
-      "name": "Eric Machado Mendonça",
+      "image": "https://thumbs2.imgbox.com/bc/46/8WonVWuO_t.jpg",
+      "name": "Wolfsfenstein",
+      "price": "R$ 20",
+      "id": 2
+    },
+    {
+      "image": "https://thumbs2.imgbox.com/52/6c/u5uqi5mx_t.jpg",
+      "name": "DOOM",
+      "price": "R$ 10",
+      "id": 1
+    },
+    {
+      "image": "https://thumbs2.imgbox.com/98/0c/4OsaD5ws_t.jpg",
+      "name": "Donkey Kong",
       "price": "R$ 60",
+      "id": 2
+    },
+    {
+      "image": "https://thumbs2.imgbox.com/51/65/fLowsoSH_t.jpg",
+      "name": "Bomberman",
+      "price": "R$ 10",
+      "id": 1
+    },
+    {
+      "image": "https://thumbs2.imgbox.com/48/32/rMVkSDTL_t.jpg",
+      "name": "Mariokart",
+      "price": "R$ 40",
       "id": 2
     }
   ]
