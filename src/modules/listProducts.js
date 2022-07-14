@@ -1,29 +1,29 @@
 
 import { service } from './service.js'
 
-const createList = (image, name, price, id) => {
-  const createUl = document.createElement('ul')
+const createCard = (image, name, price, id) => {
+  const createLi = document.createElement('li')
   
+  createLi.classList.add('product__card')
+
   const createCardTemplate = `
-    <li>
-      <img src="${image}" />
-      <p>${name}<p>
-      <p>${price}<p>
-    </li>
+    <img class="product__card--image" src=${image} />
+    <p class="product__card--name">${name}<p>
+    <p class="product__card--price">${price}<p>
   `
 
-  createUl.innerHTML = createCardTemplate
-  console.log(createUl)
-  return createUl
+  createLi.innerHTML = createCardTemplate
+  console.log(createLi)
+  return createLi
 }
 
-const main = document.querySelector('[data-main]')
+const list = document.querySelector('[data-list]')
 
 const render = async () => {
   const productList = await service.productList()
   
   productList.forEach(e => {
-    main.appendChild(createList(e.image, e.name, e.price, e.id))
+    list.appendChild(createCard(e.image, e.name, e.price, e.id))
   })
 }
 
