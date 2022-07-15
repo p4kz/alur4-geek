@@ -30,6 +30,10 @@ header {
   background: var(--bg-white);
 }
 
+main {
+  background: var(--bg-fourth);
+}
+
 button, a {
   cursor: pointer;
 }
@@ -53,6 +57,7 @@ textarea {
   max-width: 1140px;
   min-width: 354px;
   margin: 0 auto 0 auto;
+  padding: 3rem 0;
 }
 
 .btn-bb, .btn-bs, .btn-wb, .btn-ws {

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/global.css">
     <link rel="stylesheet" href="../assets/css/header.css">
-    <link rel="stylesheet" href="../assets/css/admin-page/product_card.css">
+    <link rel="stylesheet" href="../assets/css/createNewProduct/form.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
   </head>
   <body>
@@ -20,23 +20,35 @@
         <div class="header__search">
           <input placeholder="O que você deseja encontrar?" class="header__search--input" type="search"/>
           <button class="btn header__search--button">
-            <MagnifyingGlass size={20} weight="bold" color="#A2A2A2" />
+            <!-- <MagnifyingGlass size={20} weight="bold" color="#A2A2A2" /> -->
           </button> 
         </div>
-        <!-- <a href="/" to="/login" class="btn-wb header__button--login">Login</a> -->
+        <a href="./admin.html" class="btn-wb header__button--login">Menu adminitrador</a>
       </div>
     </header>
 
     <main class="container">
-      <div class="wrap" data-main>
-        <div class="admin__nav">
-          <p class="admin__nav--title">
-            Produtos
-          </p>
-          <a class="btn-bb admin__nav--button" href="./createNewProduct.html">Adicionar produto</a>
-        </div>
-        <ul class="product__box" data-list>
-        </ul>
+      <div class="wrap">
+        <form class="form" data-form>
+          <h2 class="form__title">Adicionar novo produto</h2>
+          <div class="form__box">
+            <label class="form__label" for="product-image">Imagem URL</label>
+            <input class="form__input" type="text" name="product-image" id="product-image" required data-image>
+          </div>
+          <div class="form__box">
+            <label class="form__label" for="product-name">Nome do produto</label>
+            <input class="form__input" type="text" name="product-name" id="product-name" required data-name>
+          </div>
+          <div class="form__box">
+            <label class="form__label" for="product-price">Preço do produto</label>
+            <input class="form__input" type="text" name="product-price" id="product-price" required data-price>
+          </div>
+          <div class="form__box">
+            <label class="form__label"  for="product-description">Descrição do produto</label>
+            <textarea class="form__textarea" name="product-description" id="product-description" cols="30" rows="2" data-description></textarea>
+          </div>
+          <button class="btn-bb form__button" type="submit">Adicionar produto</button>
+        </form>
       </div>
     </main>
     
@@ -76,6 +88,6 @@
     <footer class="footer-copy">
       <p class="footer-copy__text">Desenvolvido por <a class="footer-copy__text--autor" href="https://github.com/p4kz" target="_blank">Eric Mendonça</a><br/>2022</p>
     </footer>
-    <script type="module" src="../modules/listProducts.js"></script>
+    <script type="module" src="../modules/createNewProduct.js"></script>
   </body>
 </html>

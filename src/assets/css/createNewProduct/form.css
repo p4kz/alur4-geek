@@ -1,0 +1,41 @@
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto 0 auto;
+  padding: 3rem 0;
+}
+
+.form__title {
+  font-size: 2.5rem;
+  color: var(--font-gray);
+  margin-bottom: 1rem;
+}
+
+.form__label {
+  font-size: 1.2rem;
+  color: var(--font-lightgray);
+}
+
+.form__box {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 3px 5px -4px rgba(0,0,0,0.75);
+  background: var(--bg-white);
+  margin-bottom: 1rem;
+  padding: .5rem;
+}
+
+.form__input {
+  border: 0;
+  height: 25px;
+}
+
+.form__textarea {
+  background: transparent;
+}
+
+.form__button {
+  border: 0;
+}
