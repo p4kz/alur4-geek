@@ -29,7 +29,18 @@ const createNewProduct = (image, name, price, description) => {
   })
 }
 
+const removeProduct = (id) => {
+  return fetch(`http://localhost:3000/products/${id}`, {
+    method: 'DELETE',
+  }).then(resp => {
+    if(!resp.ok) {
+      throw new Error('Não foi possivel remover o produto')
+    }
+  }) 
+}
+
 export const service = {
   productList,
   createNewProduct,
+  removeProduct,
 }
