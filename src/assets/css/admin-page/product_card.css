@@ -35,22 +35,23 @@
   display: flex;
 }
 
-.product__card--delete, .product__card--edit {
+#product__card--delete, #product__card--edit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: none;
   margin: .5rem;
   border: 0;
   width: 26px;
   height: 26px;
-  display: flex;
-  align-items: center;
   border-radius: .8rem;
 }
 
-.product__card--delete:hover, .product__card--edit:hover {
+#product__card--delete:hover, #product__card--edit:hover {
   background: rgba(255, 255, 255, 0.233);
 }
 
-.product__card--edit svg, .product__card--delete svg {
+#product__card--edit img, #product__card--delete img {
   width: 20px;
   height: 20px;
 }
