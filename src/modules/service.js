@@ -39,8 +39,41 @@ const removeProduct = (id) => {
   }) 
 }
 
+const setIdProduct = (id) => {
+  return fetch(`http://localhost:3000/products/${id}`)
+  .then(resp => {
+    if(resp.ok){
+      return resp.json()
+    }
+    throw new Error('Não')
+  })
+}
+
+const editProduct = (image, name, price, description, id) => {
+  return fetch(`http://localhost:3000/products/${id}`, {
+    method: 'PUT',
+    headers: {
+      'Content-Type' : 'application/json'
+    },
+    body: JSON.stringify({
+      image: image,
+      name: name,
+      price: price,
+      description: description,
+      id: id,
+    })
+  }).then(resp => {
+    if (resp.ok) {
+      return resp.json()
+    }
+    throw new Error('Não foi possivel editar o product')
+  })
+}
+
 export const service = {
   productList,
   createNewProduct,
+  setIdProduct,
   removeProduct,
+  editProduct,
 }

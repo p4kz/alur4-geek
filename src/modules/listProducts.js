@@ -11,9 +11,9 @@ const createCard = (image, name, price, id) => {
       <button id="product__card--delete" class="btn-delete">
         <img class="btn-delete" src="../assets/img/trash-icon.svg" />
       </button>
-      <button id="product__card--edit" class="btn-edit">
+      <a href="../pages/update-product.html?id=${id}" id="product__card--edit" class="btn-edit">
         <img class="btn-edit" src="../assets/img/pen-icon.svg" />
-      </button>
+      </a>
     </div>
     <img class="product__card--image" src=${image} />
     <p class="product__card--name">${name}</p>
