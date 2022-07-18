@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - AluraGeek</title>
+    <link rel="stylesheet" href="./src/assets/css/reset.css">
+    <link rel="stylesheet" href="./src/assets/css/global.css">
+    <link rel="stylesheet" href="./src/assets/css/header.css">
+    <link rel="stylesheet" href="./src/assets/css/home-page/home.css">
+    <link rel="stylesheet" href="./src/assets/css/footer.css">
+  </head>
+  <body>
+    <header class='container'>
+      <div class="wrap header">
+        <a href="./admin.html" class="header__logo">
+          <img class="header__logo--image" src="./src/assets/img/logo-alurageek.svg" alt="AluraGeek, Logotipo" />
+        </a>
+        <div class="header__search">
+          <input placeholder="O que você deseja encontrar?" class="header__search--input" type="search"/>
+          <button class="btn header__search--button">
+            <!-- <MagnifyingGlass size={20} weight="bold" color="#A2A2A2" /> -->
+          </button> 
+        </div>
+        <a href="/" to="/login" class="btn-wb header__button--login">Login</a>
+      </div>
+    </header>
+
+    <div class="container hero">
+      <div class="wrap hero-box">
+        <h2 class="hero-box__title">Dezembro Promocional</h2>
+        <p class="hero-box__description">Produtos selecionados com 33% de desconto</p>
+        <a class="btn-bb hero-box__button" href="#">Ver Consoles</a>
+      </div>
+    </div>
+
+    <main class="container">
+      <div class="wrap" >
+        <ul class="product__box" data-list>
+        </ul>
+      </div>
+    </main>
+    
+    <div class="container footer-section">
+      <div class="wrap footer-info">
+        <div class="footer-info__box">
+          <a href="./admin.html" class="footer-info__logo">
+            <img class="footer__info--image" src="./src/assets/img/logo-alurageek.svg" alt="AluraGeek, Logotipo"/>
+          </a>
+
+          <ul class="footer-info__list">
+            <li class="footer-info__link"><a href="#">Quem somos nós</a></li>
+            <li class="footer-info__link"><a href="#">Política de privacidade</a></li>
+            <li class="footer-info__link"><a href="#">Programa fidelidade</a></li>
+            <li class="footer-info__link"><a href="#">Nossas lojas</a></li>
+            <li class="footer-info__link"><a href="#">Quero ser franqueado</a></li>
+            <li class="footer-info__link"><a href="#">Anuncie aqui</a></li>
+          </ul>
+        </div>
+        
+        <form class="footer-info__form">
+          <h2 class="footer-info__form--title">Fale conosco</h2>
+          <div class="footer-info__form--accessibility">
+            <label class="footer-info__form--label" for="name">Nome:</label>
+            <input class="footer-info__form--input" placeholder="Digite seu nome..." type="text" name="name" id="name"/>
+          </div>
+
+          <div class="footer-info__form--accessibility">
+            <label class="footer-info__form--label-textarea" for="text">Mensagem:</label>
+            <textarea class="footer-info__form--textarea" placeholder="Escreva sua mensagem..." rows="7" name="text" id="text"></textarea>
+          </div>
+          <button class="btn-bb footer-info__form--button">Enviar mensagem</button>
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer-copy">
+      <p class="footer-copy__text">Desenvolvido por <a class="footer-copy__text--autor" href="https://github.com/p4kz" target="_blank">Eric Mendonça</a><br/>2022</p>
+    </footer>
+    <script type="module" src="./src/modules/listProducts-home.js"></script>
+  </body>
+</html>
