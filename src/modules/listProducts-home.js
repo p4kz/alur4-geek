@@ -1,6 +1,6 @@
 import { service } from './service.js'
 
-const createCard = (image, name, price, id) => {
+const createCard = (image, name, price,) => {
   const createLi = document.createElement('li')
   
   createLi.classList.add('product__card')
@@ -10,11 +10,9 @@ const createCard = (image, name, price, id) => {
     <p class="product__card--name">${name}</p>
     <p class="product__card--price">${price}</p>
     <a class="product__card--button" href="#">Ver mais</a>
-
   `
 
   createLi.innerHTML = createCardTemplate
-  createLi.dataset.id = id
   return createLi
 }
 
@@ -24,7 +22,7 @@ const render = async () => {
   const productList = await service.productList()
   
   productList.forEach(e => {
-    list.appendChild(createCard(e.image, e.name, e.price, e.id))
+    list.appendChild(createCard(e.image, e.name, e.price))
   })
 }
 
