@@ -1,0 +1,32 @@
+.product {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.product__section {
+  margin-top: 5rem;
+}
+
+.product__section:nth-child(1) {
+  margin-top: 0;
+}
+
+.product__section--name {
+  display: flex;
+  justify-content: space-between;
+  color: var(--font-gray);
+  margin-bottom: 16px;
+  font-weight: bolder;
+}
+
+.product__section--title {
+  font-size: 32px;
+}
+
+.product__section--button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--font-blue);
+  font-size: 1.6rem;
+}

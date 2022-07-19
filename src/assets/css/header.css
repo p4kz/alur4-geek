@@ -35,6 +35,10 @@
   border-radius: 0 2rem 2rem 0;
 }
 
+.header__search--button img {
+  width: 20px;
+}
+
 .header__button--login {
   min-width: 183px;
 }

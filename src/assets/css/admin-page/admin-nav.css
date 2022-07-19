@@ -1,0 +1,17 @@
+.admin__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.admin__nav--title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--font-gray);
+}
+
+.admin__nav--button {
+  display: flex;
+  align-items: center;
+}
