@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AluraGeek | Editar Produto</title>
+    <title>AluraGeek | Editar produto</title>
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/global.css">
     <link rel="stylesheet" href="../assets/css/header.css">
-    <link rel="stylesheet" href="../assets/css/form.css">
+    <link rel="stylesheet" href="../assets/css/form-footer.css">
+    <link rel="stylesheet" href="../assets/css/form-edit.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
   </head>
   <body>
@@ -59,17 +60,17 @@
             <li class="footer-info__link"><a href="#">Anuncie aqui</a></li>
           </ul>
         </div>
-        <form class="footer-info__form">
-          <h2 class="footer-info__form--title">Fale conosco</h2>
-          <div class="footer-info__form--accessibility">
-            <label class="footer-info__form--label" for="name">Nome:</label>
-            <input class="footer-info__form--input" placeholder="Digite seu nome..." type="text" name="name" id="name"/>
+        <form class="form-footer">
+          <h2 class="form-footer__title">Fale conosco</h2>
+          <div class="form-footer__box">
+            <input class="form-footer__input" placeholder="Digite seu nome..." type="text" name="name" id="name"/>
+            <label class="form-footer__label" for="name">Nome</label>
           </div>
-          <div class="footer-info__form--accessibility">
-            <label class="footer-info__form--label-textarea" for="text">Mensagem:</label>
-            <textarea class="footer-info__form--textarea" placeholder="Escreva sua mensagem..." rows="7" name="text" id="text"></textarea>
+          <div class="form-footer__box">
+            <textarea class="form-footer__textarea" placeholder="Escreva sua mensagem..." rows="7" name="text" id="text"></textarea>
+            <label class="form-footer__label" for="text">Mensagem</label>
           </div>
-          <button class="btn-bb footer-info__form--button">Enviar mensagem</button>
+          <button class="btn-bb form-footer__button">Enviar mensagem</button>
         </form>
       </div>
     </div>

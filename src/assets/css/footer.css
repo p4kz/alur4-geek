@@ -36,53 +36,6 @@
   margin-bottom: 0;
 }
 
-.footer-info__form {
-  width: 100%;
-  max-width: 560px;
-  height: 240px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.footer-info__form--title {
-  color: var(--font-gray);
-}
-
-.footer-info__form--accessibility {
-  background: var(--bg-white);
-  padding: 7px 12px;
-  box-shadow: 3px 3px 5px -4px rgba(0,0,0,0.75);
-}
-
-.footer-info__form--label {
-  font-size: 1.2rem;
-  color: var(--font-lightgray);
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-info__form--input, .footer-info__form--textarea {
-  width: 90%;
-  max-width: 560px;
-  font-size: 1.6rem;
-  border: 0;
-  color: var(--font-gray);
-}
-
-.footer-info__form--label-textarea {
-  color: transparent;
-}
-
-.footer-info__form--textarea {
-  height: 52px;
-}
-
-.footer-info__form--button {
-  max-width: 165px;
-  border: 0;
-}
-
 .footer-copy {
   background: var(--bg-white);
   text-align: center;

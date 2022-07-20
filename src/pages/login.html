@@ -4,51 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AluraGeek | Novo produto</title>
+    <title>AluraGeek | Entrar</title>
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/global.css">
     <link rel="stylesheet" href="../assets/css/header.css">
     <link rel="stylesheet" href="../assets/css/form-footer.css">
     <link rel="stylesheet" href="../assets/css/form.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
   </head>
   <body>
     <header class='container'>
       <div class="wrap header">
-        <a href="./admin.html" class="header__logo">
+        <a href="../../index.html" class="header__logo">
           <img class="header__logo--image" src="../assets/img/logo-alurageek.svg" alt="AluraGeek, Logotipo" />
         </a>
-        <a href="./admin.html" class="btn-wb header__button--login">Menu administrador</a>
+        <a href="../../index.html" class="btn-wb header__button--login">Voltar</a>
       </div>
     </header>
     <main class="container">
       <div class="wrap">
-        <form class="form" data-form>
-          <h2 class="form__title">Adicionar novo produto</h2>
+        <form class="form">
+          <h2 class="form__title">Inciar sessão</h2>
           <div class="form__box">
-            <input class="form__input" type="text" name="product-image" id="product-image" placeholder="Imagem URL" required data-image>
-            <label class="form__label" for="product-image">Imagem URL</label>
+            <input class="form__input" type="email" name="email" id="email" placeholder="Digite seu email...">
+            <label class="form__label" for="email">Email</label>
           </div>
           <div class="form__box">
-            <input class="form__input" type="text" name="product-name" id="product-name" placeholder="Nome do produto" required data-name>
-            <label class="form__label" for="product-name">Nome do produto</label>
+            <input class="form__input" type="password" name="password" id="password" placeholder="Digite sua senha">
+            <label class="form__label" for="password">Senha</label>
           </div>
-          <div class="form__box">
-            <input class="form__input" type="text" name="product-price" id="product-price" placeholder="Preço do produto" required data-price>
-            <label class="form__label" for="product-price">Preço do produto</label>
-          </div>
-          <div class="form__box">
-            <textarea class="form__textarea" name="product-description" id="product-description" cols="30" rows="2" placeholder="Descrição do produto" data-description></textarea>
-            <label class="form__label"  for="product-description">Descrição do produto</label>
-          </div>
-          <button class="btn-bb form__button" type="submit">Adicionar produto</button>
+          <button class="btn-bb form__button">Entrar</button>
         </form>
       </div>
-    </main>   
+    </main>
     <div class="container footer-section">
       <div class="wrap footer-info">
         <div class="footer-info__box">
-          <a href="./admin.html" class="footer-info__logo">
+          <a href="../../index.html" class="footer-info__logo">
             <img class="footer__info--image" src="../assets/img/logo-alurageek.svg" alt="AluraGeek, Logotipo"/>
           </a>
           <ul class="footer-info__list">
@@ -77,6 +70,6 @@
     <footer class="footer-copy">
       <p class="footer-copy__text">Desenvolvido por <a class="footer-copy__text--autor" href="https://github.com/p4kz" target="_blank">Eric Mendonça</a><br/>2022</p>
     </footer>
-    <script type="module" src="../modules/newProduct.js"></script>
+    <script type="module" src=""></script>
   </body>
 </html>
