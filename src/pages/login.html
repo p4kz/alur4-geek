@@ -24,17 +24,18 @@
     </header>
     <main class="container">
       <div class="wrap">
-        <form class="form">
-          <h2 class="form__title">Inciar sessão</h2>
+        <form class="form" data-form>
+          <h2 class="form__title">Iniciar sessão</h2>
           <div class="form__box">
-            <input class="form__input" type="email" name="email" id="email" placeholder="Digite seu email...">
+            <input class="form__input" type="email" name="email" id="email" placeholder="Digite seu email..." data-email required>
             <label class="form__label" for="email">Email</label>
           </div>
           <div class="form__box">
-            <input class="form__input" type="password" name="password" id="password" placeholder="Digite sua senha">
+            <input class="form__input" type="password" name="password" id="password" placeholder="Digite sua senha" data-password required>
             <label class="form__label" for="password">Senha</label>
           </div>
-          <button class="btn-bb form__button">Entrar</button>
+          <p class="err-msg" data-erro></p>
+          <button type="submit" class="btn-bb form__button">Entrar</button>
         </form>
       </div>
     </main>
@@ -70,6 +71,6 @@
     <footer class="footer-copy">
       <p class="footer-copy__text">Desenvolvido por <a class="footer-copy__text--autor" href="https://github.com/p4kz" target="_blank">Eric Mendonça</a><br/>2022</p>
     </footer>
-    <script type="module" src=""></script>
+    <script type="module" src="../modules/login.js"></script>
   </body>
 </html>

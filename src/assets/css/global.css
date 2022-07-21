@@ -17,6 +17,7 @@
   --font-blue: #2A7AE4;
   --font-gray: #464646;
   --font-lightgray:#A2A2A2;
+  --font-red: #4e0000;
 
   font-size: 62.5%;
 }
@@ -105,6 +106,12 @@ textarea {
   background: var(--bg-button-blue-hover);
 }
 
+.err-msg {
+  height: 20px;
+  padding: 0 .5rem;
+  color: var(--font-red);
+}
+
 @media screen and (max-width: 768px) {
   .btn-wb {
     padding: 12px;
@@ -113,5 +120,4 @@ textarea {
   .btn-bb {
     padding: 12px;
   }
-  
 }
