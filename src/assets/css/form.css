@@ -69,3 +69,13 @@
   top: 1px;
   transition: all 0.25s;
 }
+
+@media screen and (max-width: 768px) {
+  .header {
+    justify-content: space-between;
+  }
+
+  .header__button--login {
+    margin: 0;
+  }
+}

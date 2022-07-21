@@ -1,0 +1,12 @@
+@media screen and (max-width: 768px) {
+
+  .header__search--input {
+    display:  block;
+    font-size: 1.2rem;
+  }
+
+  .header__search--button {
+    border-radius: 0 2rem 2rem 0;
+    background: var(--bg-fourth);
+  }
+}

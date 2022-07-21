@@ -41,3 +41,13 @@
 .form__button {
   border: 0;
 }
+
+@media screen and (max-width: 768px) {
+  .header {
+    justify-content: space-between;
+  }
+
+  .header__button--login {
+    margin: 0;
+  }
+}
