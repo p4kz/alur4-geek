@@ -8,7 +8,7 @@ const createCard = (image, name, price,) => {
   const createCardTemplate = `
     <img class="product__card--image" src=${image} />
     <p class="product__card--name">${name}</p>
-    <p class="product__card--price">R$ ${price}</p>
+    <p class="product__card--price">${price}</p>
     <a class="product__card--button" href="#">Ver mais</a>
   `
 

@@ -70,10 +70,26 @@ const editProduct = (image, name, price, description, id) => {
   })
 }
 
+const moneyMask = (tag) => {
+  const args = {
+    prefix: 'R$ ',
+    fixed: true,
+    fractionDigits: 2,
+    decimalSeparator: ',',
+    thousandsSeparator: '.',
+    cursor: 'end'
+  }
+
+  const input = SimpleMaskMoney.setMask(tag, args)
+
+  return input.formatToNumber();
+}
+
 export const service = {
   productList,
   createNewProduct,
   setIdProduct,
   removeProduct,
   editProduct,
+  moneyMask
 }

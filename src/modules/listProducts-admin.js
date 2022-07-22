@@ -17,7 +17,7 @@ const createCard = (image, name, price, id) => {
     </div>
     <img class="product__card--image" src=${image} />
     <p class="product__card--name">${name}</p>
-    <p class="product__card--price">R$ ${price}</p>
+    <p class="product__card--price">${price}</p>
     <p> # ${id}</p>
   `
 

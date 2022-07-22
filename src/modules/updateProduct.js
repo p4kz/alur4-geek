@@ -1,6 +1,8 @@
 import { service } from "./service.js";
 
 (async () => {
+  service.moneyMask('[data-price]')
+  
   const pickURL = new URL(window.location)
 
   const id = pickURL.searchParams.get('id')
