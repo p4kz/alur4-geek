@@ -1,0 +1,21 @@
+.box404 {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.erro404 {
+  font-size: 10rem;
+  color: var(--font-lightgray);
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    justify-content: space-between;
+  }
+
+  .header__button--login {
+    margin: 0;
+  }
+}
