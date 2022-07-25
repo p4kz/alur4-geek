@@ -15,7 +15,7 @@ import { service } from "./service.js";
   try {
     const data = await service.setIdProduct(id)
 
-    inputImage.value= data.image
+    inputImage.value = data.image
     inputName.value = data.name
     inputPrice.value = data.price
     inputDescription.value = data.description

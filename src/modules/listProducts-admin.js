@@ -53,5 +53,3 @@ const render = async () => {
 }
 
 render()
-
-// https://imgbox.com/ - site para upar image
